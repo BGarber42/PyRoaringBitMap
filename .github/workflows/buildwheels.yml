@@ -50,7 +50,7 @@ jobs:
         with:
           platforms: all
       - name: Build wheels
-        uses: pypa/cibuildwheel@v2.23.2
+        uses: pypa/cibuildwheel@v3
         env:
           CIBW_TEST_REQUIRES: hypothesis pytest
           CIBW_TEST_COMMAND: "python {project}/cydoctest.py -v"  # full test command: py.test {project}/test.py -v
